@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/ColorPrimaryLight"
+    android:layout_alignParentBottom="true"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp"
+    app:contentInsetRight="0dp"
+    app:contentInsetEnd="0dp"
+    android:elevation="4dp"
+    >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/origin_select"
+            android:src="@mipmap/ic_action_play"
+            android:background="@drawable/feedback_background"
+            android:onClick="choose_origin_button"
+            android:padding="12dp"
+            android:layout_toLeftOf="@+id/destination_select"
+            />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/destination_select"
+            android:src="@mipmap/ic_action_stop"
+            android:background="@drawable/feedback_background"
+            android:onClick="choose_destination_button"
+            android:padding="12dp"
+            android:layout_centerInParent="true"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/poi_select"
+            android:src="@mipmap/ic_action_pause"
+            android:background="@drawable/feedback_background"
+            android:onClick="choose_interest_button"
+            android:padding="12dp"
+            android:layout_toRightOf="@+id/destination_select"
+
+            />
+
+        </LinearLayout>
+
+
+</android.support.v7.widget.Toolbar>

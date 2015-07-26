@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ColorPrimaryDark">#303F9F</color>
+    <color name="ColorPrimaryLight">#3F51B5</color>
+    <color name="click_background_after">#BBBBBB</color>
+    <color name="click_background_before">#FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+</resources>

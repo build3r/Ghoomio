@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!-- A CardView that contains a TextView -->
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="fill_parent"
+    android:layout_height="150dp"
+    card_view:cardCornerRadius="4dp"
+    android:elevation="10dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dp"
+        android:id="@+id/outer_layout">
+
+        <ImageView
+            android:id="@+id/path_image"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="2dp"
+            android:layout_marginLeft="2dp"
+            android:src="@mipmap/ic_launcher"/>
+
+
+
+        <TextView
+            android:id="@+id/path_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="3dp"
+            android:text="12 min"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/path_length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="3dp"
+            android:text="1.2 km"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/path_tags"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/path_name"
+            android:layout_margin="3dp"
+            android:layout_toRightOf="@+id/path_image"
+            android:text="foodie, shopaholic" />
+
+        <TextView
+            android:id="@+id/path_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/path_image"
+            android:layout_alignParentTop="true"
+            android:layout_margin="3dp"
+            android:text="Random Path Name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/black" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+    <!--/LinearLayout-->
